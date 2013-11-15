@@ -1,10 +1,6 @@
 package com.hujing.test;
 
 public class Main {
-
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
         System.out.println("Success!"+args);
         if (null != args) {
