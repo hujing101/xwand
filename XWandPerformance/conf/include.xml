@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="include" basedir=".">
+
+<import file="01/build.xml"/>
+<import file="02/build.xml"/>
+
+</project>

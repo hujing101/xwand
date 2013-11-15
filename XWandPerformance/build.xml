@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="XWandPerformance" default="run" basedir=".">
+	<taskdef resource="net/sf/antcontrib/antlib.xml">
+		<classpath>
+			<pathelement location="${basedir}/antlib/ant-contrib-1.0b3.jar" />
+		</classpath>
+	</taskdef>
+	<!-- set global properties for this build -->
+	<property name="src" location="src" />
+	<property name="build" location="build" />
+	<property name="dist" location="dist" />
+
+	<target name="init">
+		<!-- Create the time stamp -->
+		<tstamp />
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build}" />
+	</target>
+
+	<target name="compile" depends="init" description="compile the source ">
+		<!-- Compile the java code from ${src} into ${build} -->
+		<javac srcdir="${src}" destdir="${build}" />
+	</target>
+
+	<target name="dist" depends="compile" description="generate the distribution">
+		<!-- Create the distribution directory -->
+		<mkdir dir="${dist}/lib" />
+
+		<!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+		<jar jarfile="${dist}/lib/XWandPerformance.jar" basedir="${build}" />
+	</target>
+
+	<target name="run" depends="dist">
+		<for param="i" begin="1" end="2">
+			<sequential>
+				<ant antfile="${basedir}/conf/@{i}/build.xml" target="@{i}" inheritAll="false" />
+			</sequential>
+		</for>
+		<!--<exec executable="${ant}">
+			<arg value="-f" />
+			<arg value="${basedir}/conf/1/build.xml" />
+		</exec>
+		<exec executable="${ant}">
+			<arg value="-f" />
+			<arg value="${basedir}/conf/2/build.xml" />
+		</exec>-->
+	</target>
+
+	<target name="clean" description="clean up">
+		<!-- Delete the ${build} and ${dist} directory trees -->
+		<delete dir="${build}" />
+		<delete dir="${dist}" />
+	</target>
+</project>

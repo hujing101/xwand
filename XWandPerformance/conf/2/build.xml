@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="test02" default="2" basedir=".">
+	<property file="2.properties" />
+	<target name="2">
+		<java classname="com.hujing.test.Main">
+					<classpath>
+						<path location="../../build">
+						</path>
+					</classpath>
+					<!--<classpath>
+						<fileset dir="lib" includes="**/*.jar">
+						</fileset>
+					</classpath>-->
+					<arg value="${fileName}"/>
+					<arg value="${loopCount}"/>
+				</java>
+	</target>
+</project>
