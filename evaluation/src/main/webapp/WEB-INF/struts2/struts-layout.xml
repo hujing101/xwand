@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!--解决乱码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8">
+	</constant>
+	<package name="layout" extends="struts-default" namespace="/">
+		<action name="top" class="layoutAction" method="top">
+			<result name="success">/jsp/layout/top.jsp</result>
+		</action>
+		
+		<action name="index" class="layoutAction" method="index">
+			<result name="success">/jsp/login/index.jsp</result>
+		</action>
+		<action name="menu" class="layoutAction" method="menu">
+			<result name="success">/jsp/layout/menu.jsp</result>
+		</action>
+		<action name="footer" class="layoutAction" method="footer">
+			<result name="success">/jsp/layout/footer.jsp</result>
+		</action>
+	</package>
+</struts>

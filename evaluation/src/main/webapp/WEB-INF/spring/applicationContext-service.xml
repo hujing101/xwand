@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="userService"
+		 parent="baseTransactionProxy">
+		<property name="target">
+			<ref local="userServiceTarget" />
+		</property>
+	</bean>
+	
+	<bean id="userServiceTarget" class="com.fujitsu.evaluation.app.service.UserService">
+	<property name="userDAO">
+			<ref bean="userDAO" />
+		</property>
+	</bean>
+</beans>
