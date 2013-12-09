@@ -5,12 +5,14 @@
 <title></title>
 </head>
 
-<frameset rows="100,*,80" frameborder="0" border="0" framespacing="0">
-  <frame name="top" src="top.action">
-<frameset cols="200,*" frameborder="0" border="0" framespacing="0">
-	<frame name="menu" src="menu.action" marginheight="0" marginwidth="0" scrolling="auto" noresize>
-	<frame name="content" src="get.action" marginheight="0" marginwidth="0" scrolling="auto" noresize>
-</frameset>
-  <frame name="footer" src="footer.action">
+<frameset rows="100,*,20" border="0" framespacing="0">
+	<frame name="top" src="top.action" scrolling="no">
+	<frameset cols="200,*" border="0" framespacing="0">
+		<frame name="menu" src="menu.action" marginheight="0" marginwidth="0"
+			scrolling="auto" noresize>
+		<frame name="content" src="get.action" marginheight="0"
+			marginwidth="0" scrolling="auto" noresize>
+	</frameset>
+	<frame name="footer" src="footer.action" frameborder="0" scrolling="no">
 </frameset>
 </html>

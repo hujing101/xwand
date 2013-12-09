@@ -8,7 +8,7 @@ body {
 	font-family:verdana,arial,sans-serif;
 	font-size:10pt;
 	margin:10px;
-	background-color:#a08029;
+	background-color: rgb(240, 240, 240);
 	}
 </style>
 </head>

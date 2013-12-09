@@ -5,21 +5,35 @@
 <title>HTML Frames Example - Menu 1</title>
 <style type="text/css">
 body {
-	font-family:verdana,arial,sans-serif;
-	font-size:10pt;
-	margin:10px;
-	background-color:#ff9900;
-	}
+	font-family: verdana, arial, sans-serif;
+	font-size: 10pt;
+	margin: 10px;
+	background-color: #FFFFFF;
+}
+.changeDiv:hover{background:rgb(240, 240, 240);cursor: pointer;}
+
 </style>
 </head>
 <body>
-<h3>Menu 1</h3>
+	<div>
+		<h3>Menu 1</h3>
 
-<h4>More Examples:</h4>
-<a href="get.action" target="content">Example 1</a><br />
-<a href="add.action" target="content">Example 2</a><br />
-<a href="get.action" target="content">Example 3</a><br />
-<a href="get.action" target="content">Example 4</a><br />
-<a href="get.action" target="content">Example 5</a><br />
+		<h4>More Examples:</h4>
+		<div class="changeDiv">
+			Example 1
+		</div>
+		<div class="changeDiv">
+			<a href="add.action" target="content" style="text-decoration:none;">Example 2</a>
+		</div>
+		<div class="changeDiv">
+			Example 3
+		</div>
+		<div class="changeDiv">
+			Example 4
+		</div>
+		<div class="changeDiv">
+			Example 5
+		</div>
+	</div>
 </body>
 </html>
