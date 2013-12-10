@@ -4,7 +4,7 @@
 <head>
 </head>
 <body style="text-align: center;line-height: 20px;
-    margin-top: 0;font-size: 11px;background-color: rgb(240, 240, 240);">
+    margin-top: 0;font-size: 12px;background-color: rgb(240, 240, 240);">
 <div>
 Copyright ©2013 富士通南大软件技术有限公司
 </div>

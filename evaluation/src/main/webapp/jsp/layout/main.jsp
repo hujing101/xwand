@@ -4,12 +4,12 @@
 <head>
 <title></title>
 </head>
-
-<frameset rows="100,*,20" border="0" framespacing="0">
-	<frame name="top" src="top.action" scrolling="no">
-	<frameset cols="200,*" border="0" framespacing="0">
+<!--frameset中设置的frameborder="0"是为了兼容ie6-->
+<frameset rows="50,*,20" border="0" frameborder="0" framespacing="0">
+	<frame name="top" src="top.action" scrolling="no" style="border-bottom: 1px solid #EEEEEE;">
+	<frameset cols="200,*" border="0" frameborder="0" framespacing="0">
 		<frame name="menu" src="menu.action" marginheight="0" marginwidth="0"
-			scrolling="auto" noresize>
+			scrolling="auto" noresize style="border-right: 1px solid rgb(240, 240, 240);">
 		<frame name="content" src="get.action" marginheight="0"
 			marginwidth="0" scrolling="auto" noresize>
 	</frameset>
