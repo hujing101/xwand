@@ -5,7 +5,7 @@
 <title></title>
 </head>
 <!--frameset中设置的frameborder="0"是为了兼容ie6-->
-<frameset rows="50,*,20" border="0" frameborder="0" framespacing="0">
+<frameset rows="55,*,20" border="0" frameborder="0" framespacing="0">
 	<frame name="top" src="top.action" scrolling="no" style="border-bottom: 1px solid #EEEEEE;">
 	<frameset cols="200,*" border="0" frameborder="0" framespacing="0">
 		<frame name="menu" src="menu.action" marginheight="0" marginwidth="0"
