@@ -16,5 +16,8 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 
 	<bean id="loginAction" class="com.fujitsu.evaluation.action.LoginAction"
 		scope="prototype">
+		<property name="userService">
+			<ref bean="userService" />
+		</property>
 	</bean>
 </beans>

@@ -20,25 +20,23 @@ public class UserAction extends ActionSupport {
 	public UserVO getResult() {
 		return result;
 	}
+	
 	public void setResult(UserVO result) {
 		this.result = result;
 	}
 	
 	@Override
 	public String execute() throws Exception {
-		System.out.println(userService.getUserInfoByUserID("1"));
 		return SUCCESS;
 	}
 	
 	public String add(){
 		try{
-			result = userService.getUserInfoByUserID("1");
+			result = userService.getUserInfoByUserID(new UserVO());
 		}
 		catch(EvaluationException e){
 			e.printStackTrace();
 		}
 		return SUCCESS;
 	}
-
-	
 }

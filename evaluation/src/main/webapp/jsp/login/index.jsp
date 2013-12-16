@@ -29,12 +29,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<H2>Login</H2>
 			<br />
 			<form id="loginFrom" action="login.action" method="post">
-				<div id="login-box-name" style="margin-top: 20px;">Email:</div>
+				<div id="login-box-name" style="margin-top: 20px;">用户名:</div>
 				<div id="login-box-field" style="margin-top: 20px;">
-					<input id="userName" name="userName" class="form-login" title="Username" value=""
+					<input id="userID" name="userID" class="form-login" title="userID" value=""
 						size="30" maxlength="25" />
 				</div>
-				<div id="login-box-name">Password:</div>
+				<div id="login-box-name">密码:</div>
 				<div id="login-box-field">
 					<input name="password" id="password" type="password" class="form-login"
 						title="Password" value="" size="30" maxlength="25" />

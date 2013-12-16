@@ -13,8 +13,8 @@
 	
 	
 	<filter>
-		<filter-name>evaluation-filter</filter-name>
-		<filter-class>com.fujitsu.evaluation.kernel.filter.EvaluationFilter</filter-class>
+		<filter-name>login-filter</filter-name>
+		<filter-class>com.fujitsu.evaluation.kernel.filter.LoginFilter</filter-class>
 	</filter>
 	
 	<filter>
@@ -29,7 +29,7 @@
 	</filter>
 
 	<filter-mapping>
-		<filter-name>evaluation-filter</filter-name>
+		<filter-name>login-filter</filter-name>
 		<url-pattern>*.action</url-pattern>
 	</filter-mapping>
 	

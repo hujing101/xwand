@@ -5,6 +5,7 @@
         
 <configuration> 
 	<mappers>  
-        <mapper resource="com/fujitsu/evaluation/dao/sqlmap/evaluation_user_info.xml" />  
+        <mapper resource="com/fujitsu/personnel/evaluation/dao/sqlmap/evaluation_user_info.xml" />  
     </mappers>
-</configuration>
+</configuration> 
+

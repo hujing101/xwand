@@ -5,7 +5,7 @@ import com.fujitsu.evaluation.exception.EvaluationException;
 import com.fujitsu.evaluation.intf.dao.IUserDAO;
 
 public class UserDAO extends BaseDAO implements IUserDAO {
-	public UserVO getUserInfoByUserID(String userID) throws EvaluationException {
-		return this.getSqlSession().selectOne("getUserInfoByUserID", userID);
+	public UserVO getUserInfoByUserID(UserVO userVO) throws EvaluationException {
+		return this.getSqlSession().selectOne("getUserInfoByUserID", userVO);
 	}
 }

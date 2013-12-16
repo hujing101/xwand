@@ -5,9 +5,6 @@
     "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-	<!--解决乱码 -->
-	<constant name="struts.i18n.encoding" value="UTF-8">
-	</constant>
 	<package name="layout" extends="struts-default" namespace="/">
 		<action name="top" class="layoutAction" method="top">
 			<result name="success">/jsp/layout/top.jsp</result>
